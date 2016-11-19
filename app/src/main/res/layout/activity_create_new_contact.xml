@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adi.callapp.CreateNewContactActivity">
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:id="@+id/topPanelContaner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/ContactText"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="שמור"/>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="איש קשר חדש"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ביטול"
+            android:textSize="25dp"
+
+            android:layout_alignParentRight="true"
+            android:textColor="@color/ContactText"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/topPanelContaner"
+        android:layout_width="match_parent"
+        android:id="@+id/centerPanel"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layoutDirection="rtl"
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:hint="שם פרטי"/>
+
+            <TextView
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="שם משפחה"/>
+
+            <TextView
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="שם פרטי"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_below="@id/centerPanel"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layoutDirection="rtl"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginBottom="@dimen/text_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="טלפון"
+            android:id="@+id/phoneNumberTV"/>
+
+
+
+        <TextView
+            android:layout_marginBottom="@dimen/text_vertical_margin"
+            android:layout_below="@id/phoneNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"/>
+
+
+
+        </RelativeLayout>
+</RelativeLayout>
